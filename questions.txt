@@ -1,0 +1,64 @@
+----------------------------
+  JavaScript Midterm Practice
+----------------------------
+Instructions:  
+
+Using the files contained in this zip file, implement solutions for the questions below.  Each question has a folder associated with it
+containing the file where you will write your code, and a second file that contains the Jasmine tests relevant to that question.
+
+Question folders are as follows:
+1. find-pairs
+2. search
+3. zoo
+
+All tests can be run by opening test.html in your browser.  If you want to comment out some tests to make it easier to focus on the question that you are
+working on, you are more than welcome to do so.  Other than commenting, do not modify the tests in any way.               
+
+1.  Given an array a that contains only numbers in the range from 1 to a.length, find the number of pairs there are in the array. 
+    The function should return the number of pairs in the array. If there are no pairs in the array it should return -1. 
+    If there are multiple pairs of the same number they should be counted as a new set of pairs.
+    
+    Examples:
+      For array = [2, 3, 3, 1, 5, 2], the output should be 2.
+    
+      There are 2 pairs: index 0 and 5 both contain a 2 and index 1 and 2 both contain a 3.
+      
+      For array = [2, 4, 3, 5, 1], the output should be findPairs(array) = -1.
+
+      For array = [2, 2, 2, 2, 1], the output should be findPairs(array) = 2.
+
+
+2.  Given a string of text, write a function named search which takes two parameters: a string of text
+    and a string to search for in the text, and returns an array of all the words that contain the specified string.
+    Your function should be case insensitive.
+
+    function search(text, searchTerm) {...}
+   
+    Example:
+       search('Those who dare to fail miserably can achieve greatly.', 're') => ['dare', 'greatly']
+       search('Success is how high you bounce when you hit bottom.', 'ce') => ['Success', 'bounce']
+       search('Great minds discuss ideas; average minds discuss events; small minds discuss people.', 'discuss') => ['discuss', 'discuss', 'discuss']
+
+    Hint 1: You can get an all uppercase copy of a string by calling .toUpperCase(), or an all lowercase copy by calling .toLowerCase()
+    Hint 2: Think about how you would create an array from the string passed in
+
+
+3.  Implement a class named 'Zoo' with the following properties and functions:
+      Properties:
+        address: string
+        entryFee: number
+        animals: array
+        residentDiscount: number
+        status: boolean (true: open, false: closed)
+
+      Functions:
+        constructor() --> should take 3 arguments: address, entryFee, animals and set the arugments to their
+                         respective properties of the Zoo class (this.address, this.entryFee, this.animals)
+        
+        hasAnimal(animal) --> should return a boolean of wether or not it has that animal
+        
+        isOpen() --> should return a string containing the word 'YES' or 'NO', 'YES' if the zoo
+                        is open, and 'NO' if the zoo is closed
+        getResidentPrice() --> should return the entryFee price for a resident (use entryFee and residentDiscount to get result)
+      
+      Your class should default the status to true and resident discount to 10%
