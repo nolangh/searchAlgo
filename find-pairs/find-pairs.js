@@ -1,15 +1,11 @@
 function findPairs(array) {
-	const sorted = array.sort(function (a, b) {
-		//sorts the array
-		return a - b;
-	});
-	console.log(sorted);
-	let pair = 0; //set pairs to 0
-	for (let i of sorted) {
-		if (sorted[i] === sorted[i + 1]) {
-			pair += 1; // cant figure out why this is returning 3 instead of 2
+	let count = 0;
+	for (let i = 0; i < array.length; i++) {
+		for (let j = i + 1; j < array.length; j++) {
+			if (array[i] == array[j]) {
+				count++; //got it to count duplicates now I need it to retun -1 if there are no duplicates
+			}
 		}
 	}
-	console.log(pair);
-	return pair;
+	return count;
 }
