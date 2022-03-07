@@ -1,4 +1,4 @@
-describe('search', () => {
+/*describe('search', () => {
     it('should return [\'dare\', \'greatly\'] when the search term is \'re\' and the text is \'Those who dare to fail miserably can achieve greatly\'', () => {
     const expected = ['dare', 'greatly'];
     const result = search('Those who dare to fail miserably can achieve greatly', 're');
@@ -29,4 +29,4 @@ describe('search', () => {
     
     expect(result).toEqual(expected);
   });
-});
+});*/
