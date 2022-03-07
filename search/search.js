@@ -1,3 +1,5 @@
+const { val } = require("jshint/src/options");
+
 /*2.  Given a string of text, write a function named search which takes two parameters: a string of text
     and a string to search for in the text, and returns an array of all the words that contain the specified string.
     Your function should be case insensitive.
@@ -13,5 +15,14 @@
     Hint 2: Think about how you would create an array from the string passed in
 */
 function search(text, searchTerm) {
-	let newText = text.toLowerCase();
+	let newText = text.toLowerCase().split(" ");
+	let result = [];
+	for (let val of newText) {
+		if (val.includes(searchTerm)) {
+			result.push(val);
+			console.log(val);
+		}
+	}
+
+	return result;
 }
