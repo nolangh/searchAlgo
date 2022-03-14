@@ -1,1 +1,0 @@
-function search(text, searchTerm) {}
