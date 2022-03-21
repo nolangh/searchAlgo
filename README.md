@@ -1,2 +1,2 @@
-# midterm-p
-Practice for JS Midterm
+# search-algo
+Basic selection search algo
