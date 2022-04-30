@@ -1,2 +1,3 @@
-# search-algo
+# Search-algo
+
 Basic selection search algo
